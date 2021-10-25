@@ -1,0 +1,128 @@
+.header {
+    height: 70px;
+    background-color: #2C0803;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-img {
+    height: 70px;
+    display: inline-block;
+}
+
+.header__navbar {
+    display: flex;
+    right: 0;
+    justify-content: space-between;
+}
+
+.header__nav-list {
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+    color: var(--white-color);
+    list-style: none;
+    height: 100%;
+    display: inline-block;
+}
+
+.header__nav-item {
+    display: inline-block;
+    line-height: 70px;
+    font-size: 1.6rem;
+    padding: 0 16px;
+}
+
+.header__nav-item-link {
+    color: var(--white-color);
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 1.6rem;
+}
+
+.header__nav-item-link:hover {
+    color: red;
+}
+
+
+
+.nav-login {
+    display: inline-flex;
+    color: var(--white-color);
+    font-size: 1.6rem;
+    border: 2px solid #771305;
+    padding: 4px 12px;
+    height: 35px;
+    align-self: center;
+    line-height: 35px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-content {
+    margin: auto;
+}
+
+.modal-content-inner {
+    background-color: #fff;
+    border-radius: 5px;
+    /* height: 470px; */
+    width: 400px;
+    padding: 12px 20px;
+    font-size: 1.6rem;
+}
+
+label[class="username"],
+label[class="password"] {
+    font-size: 1.7rem;
+    display: block;
+    padding: 4px 0;
+}
+
+input[name="username"],
+input[name="password"] {
+    display: block;
+    padding: 12px;
+    width: 375px;
+    font-size: 1.6rem;
+    right: 0;
+}
+
+.modal-heading {
+    
+}
+
+.inputAccount {
+    width: 100%;
+    padding: 2px 0 12px;
+}
+
+.login-btn {
+    margin: 12px 0;
+    display: flex;
+    width: 380px;
+    right: 0;
+    background-color: red;
+    border: none;
+    padding: 8px 12px;
+    text-justify: center;
+}
+
+.main {
+    height: 1500px;
+}
