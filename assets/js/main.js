@@ -1,9 +1,22 @@
-var navLogin = document.querySelector('.header__nav-item')
-document.innerHTML = "helo"
-console.log(12);
-// console.log(navLogin);
-// navLogin.onclick = function() {
-//     var modal = document.querySelector('.modal');
-//     console.lo(modal)
-//     modal.style.display = 'flex';
-// }
+
+
+// Đăng nhập
+var navLogin = document.querySelector('.nav-login');
+var modal = document.querySelector('.modal');
+var modalContent = document.querySelector('.modal-content');
+
+
+navLogin.addEventListener('click', login);
+function login() {
+    modal.style.display = 'flex';
+}
+
+modal.addEventListener('click', closeLogin);
+function closeLogin() {
+    modal.style.display = 'none';
+}
+
+modalContent.addEventListener('click', function(e) {
+    e.stopImmediatePropagation();
+})
+

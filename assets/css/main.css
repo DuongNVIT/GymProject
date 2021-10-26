@@ -1,5 +1,5 @@
 .header {
-    height: 70px;
+    height: 60px;
     background-color: #2C0803;
     position: fixed;
     top: 0;
@@ -9,15 +9,19 @@
     justify-content: space-between;
 }
 
-.logo-img {
-    height: 70px;
+.header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
     display: inline-block;
+    padding-right: 16px;
 }
 
 .header__navbar {
-    display: flex;
-    right: 0;
-    justify-content: space-between;
+    display: inline-flex;
+    align-items: center;
 }
 
 .header__nav-list {
@@ -27,21 +31,16 @@
     margin: 0;
     color: var(--white-color);
     list-style: none;
-    height: 100%;
-    display: inline-block;
 }
 
 .header__nav-item {
     display: inline-block;
-    line-height: 70px;
-    font-size: 1.6rem;
     padding: 0 16px;
 }
 
 .header__nav-item-link {
     color: var(--white-color);
     text-decoration: none;
-    line-height: 70px;
     font-size: 1.6rem;
 }
 
@@ -52,16 +51,18 @@
 
 
 .nav-login {
-    display: inline-flex;
     color: var(--white-color);
     font-size: 1.6rem;
     border: 2px solid #771305;
-    padding: 4px 12px;
-    height: 35px;
+    border-radius: 3px;
+    padding: 10px 12px;
     align-self: center;
-    line-height: 35px;
     cursor: pointer;
     margin-right: 20px;
+}
+
+.nav-login:hover {
+    background-color: #771305;
 }
 
 .modal {
@@ -76,6 +77,7 @@
 
 .modal-content {
     margin: auto;
+    animation: modalFadeIn ease 0.4;
 }
 
 .modal-content-inner {
@@ -85,6 +87,7 @@
     width: 400px;
     padding: 12px 20px;
     font-size: 1.6rem;
+    animation: modalFadeIn ease 0.4;
 }
 
 label[class="username"],
@@ -120,9 +123,20 @@ input[name="password"] {
     background-color: red;
     border: none;
     padding: 8px 12px;
-    text-justify: center;
+    justify-content: center;
 }
 
 .main {
     height: 1500px;
+}
+
+@keyframes modalFadeIn {
+    from { 
+        opacity: 0;
+        transform: translateY(-100px);
+
+    } to { 
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
