@@ -1,4 +1,5 @@
 .header {
+    z-index: 2;
     height: 60px;
     background-color: #2C0803;
     position: fixed;
@@ -104,6 +105,8 @@ input[name="password"] {
     width: 375px;
     font-size: 1.6rem;
     right: 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
 }
 
 .modal-heading {
@@ -124,10 +127,17 @@ input[name="password"] {
     border: none;
     padding: 8px 12px;
     justify-content: center;
+    cursor: pointer;
+    opacity: 1;
+    border-radius: 3px;
 }
 
-.main {
-    height: 1500px;
+.login-btn:hover {
+    opacity: 0.5;
+}
+
+.login-sai {
+    display: none;
 }
 
 @keyframes modalFadeIn {
@@ -140,3 +150,182 @@ input[name="password"] {
         transform: translateY(0);
     }
 }
+
+.main {
+    height: 1500px;
+    position: relative;
+    top: 60px;
+}
+
+
+
+/* Slider */
+.slider {
+    width: 100%;
+    max-width: 1100px;
+    position: relative;
+    margin: auto;
+}
+
+.slider-left,
+.slider-right {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.6rem;
+    z-index: 1;
+    color: #ccc;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.slider-left:hover,
+.slider-right:hover {
+    color: red;
+    border-color: red;
+}
+
+.slider-left {
+    left: 10px;
+}
+
+.slider-right {
+    right: 10px;
+}
+
+.slider-dots {
+    position: absolute;
+    display: flex;
+    left: 50%;
+    bottom: 0;
+    margin: 0;
+    padding: 12px 0;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-dot-item {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 0 4px;
+    cursor: pointer;
+}
+
+.slider-dot-item.slider-dot-active {
+    background-color: red;
+}
+
+.slider-dot-item:hover {
+    background-color: red;
+}
+
+.slider-wrapper {
+    overflow: hidden;
+}
+
+.slider-main {
+    /* height: 600px; */
+    /* overflow: hidden; */
+    position: relative;
+    display: flex;
+    transition: transform ease 0.7s;
+}
+
+.slider-item {
+    flex: 1 0 100%;
+}
+
+.slider-img {
+    width: 100%;
+    height: 500px;
+    display: block;
+}
+
+/* What we offer */
+.whatoffer {
+    background-color: #2C0803;
+    color: var(--white-color);
+    text-align: center;
+}
+
+.offer-heading {
+    margin: 0;
+    font-size: 2.4rem;
+    width: 100%;
+    text-align: center;
+    padding: 25px 0 10px;
+    color: red;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.offer-subheading {
+    margin: 0;
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0 25px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.offer-list {
+    display: flex;
+}
+
+.offer-item {
+    width: 25%;
+    padding: 16px;
+}
+
+.icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: red;
+    font-size: 3.0rem;
+}
+
+.item-icon:hover {
+    background-color: red;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.content-heading {
+    font-size: 2rem;
+    line-height: 50px;
+    /* font-stretch: expanded; */
+}
+
+.item-infor {
+    font-size: 1.5rem;
+    opacity: 0.7;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+
+
+
+

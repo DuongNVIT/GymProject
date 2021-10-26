@@ -7,11 +7,11 @@
     <title>DdD Gym</title>
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="/assets/css/base.css">
-    <!-- <script src="./assets/js/main.js"></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
 </head>
 <body>
 
@@ -25,11 +25,11 @@
                     </a>
                 </div>
                 <ul class="header__nav-list">
-                    <li class="header__nav-item"><a href="" class="header__nav-item-link">Home</a></li>
-                    <li class="header__nav-item"><a href="" class="header__nav-item-link">About us</a></li>
-                    <li class="header__nav-item"><a href="" class="header__nav-item-link">Schedule</a></li>
-                    <li class="header__nav-item"><a href="" class="header__nav-item-link">Gallary</a></li>
-                    <li class="header__nav-item"><a href="" class="header__nav-item-link">Contact</a></li>
+                    <li class="header__nav-item"><a href="./index.html" class="header__nav-item-link">Home</a></li>
+                    <li class="header__nav-item"><a href="./aboutus.html" class="header__nav-item-link">About</> us</a></li>
+                    <li class="header__nav-item"><a href="./schedule.html" class="header__nav-item-link">Schedule</a></li>
+                    <li class="header__nav-item"><a href="./gallery.html" class="header__nav-item-link">Gallary</a></li>
+                    <li class="header__nav-item"><a href="./contac.html" class="header__nav-item-link">Contact</a></li>
                 </ul>
             </nav>
             <div class="nav-login">
@@ -41,10 +41,97 @@
 
     <!-- Main -->
     <main class="main">
-        <section class="slider">
 
+        <!-- Slider -->
+        <div class="grid">
+            <section class="slider">
+                <div class="slider-left">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="slider-right">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <ul class="slider-dots">
+                    <div class="slider-dot-item slider-dot-active"></div>
+                    <div class="slider-dot-item"></div>
+                    <div class="slider-dot-item"></div>
+                    <div class="slider-dot-item"></div>
+                </ul>
+                <div class="slider-wrapper">
+                    <div class="slider-main">
+                        <div class="slider-item slider-here" id="1">
+                            <img class="slider-img" src="https://www.thethaothientruong.vn/uploads/contents/aan-gym-yoga-quan-9.jpg" alt="">
+                        </div>
+                        <div class="slider-item" id="2">
+                            <img class="slider-img" src="https://i.pinimg.com/originals/07/f9/df/07f9df953582c38d9d38de1f044e7b06.png" alt="">
+                        </div><div class="slider-item" id="3">
+                            <img class="slider-img" src="https://www.thethaothientruong.vn/uploads/contents/aan-gym-yoga-quan-9.jpg" alt="">
+                        </div><div class="slider-item" id="4">
+                            <img class="slider-img" src="https://www.thethaothientruong.vn/uploads/contents/aan-gym-yoga-quan-9.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Why choose use -->
+
+        <section class="whatoffer">
+            <div class="grid">
+                <h2 class="offer-heading">What we offer?</h2>
+                <h3 class="offer-subheading">Push yourself forward!</h3>
+                <div class="offer-list">
+                    <div class="offer-item">
+                        <div class="icon-wrapper">
+                            <div class="item-icon">
+                                <i class="fas fa-dumbbell"></i>
+                            </div>
+                        </div>
+                        <div class="item-content">
+                            <h2 class="content-heading">Thiết bị hiện đại</h2>
+                            <p class="item-infor">Chúng tôi cung cấp trang thiết bị luyện tập đạt chuẩn, hiện đại, đẳng cấp quốc tế, đội ngũ huấn luyện viên chuyên nghiệp</p>
+                        </div>
+                    </div>
+                    <div class="offer-item">
+                        <div class="icon-wrapper">
+                            <div class="item-icon">
+                                <i class="fas fa-dumbbell"></i>
+                            </div>
+                        </div>
+                        <div class="item-content">
+                            <h2 class="content-heading">Thiết bị hiện đại</h2>
+                            <p class="item-infor">Chúng tôi cung cấp trang thiết bị luyện tập đạt chuẩn, hiện đại, đẳng cấp quốc tế, đội ngũ huấn luyện viên chuyên nghiệp</p>
+                        </div>
+                    </div>
+                    <div class="offer-item">
+                        <div class="icon-wrapper">
+                            <div class="item-icon">
+                                <i class="fas fa-dumbbell"></i>
+                            </div>
+                        </div>
+                        <div class="item-content">
+                            <h2 class="content-heading">Thiết bị hiện đại</h2>
+                            <p class="item-infor">Chúng tôi cung cấp trang thiết bị luyện tập đạt chuẩn, hiện đại, đẳng cấp quốc tế, đội ngũ huấn luyện viên chuyên nghiệp</p>
+                        </div>
+                    </div>
+                    <div class="offer-item">
+                        <div class="icon-wrapper">
+                            <div class="item-icon">
+                                <i class="fas fa-dumbbell"></i>
+                            </div>
+                        </div>
+                        <div class="item-content">
+                            <h2 class="content-heading">Thiết bị hiện đại</h2>
+                            <p class="item-infor">Chúng tôi cung cấp trang thiết bị luyện tập đạt chuẩn, hiện đại, đẳng cấp quốc tế, đội ngũ huấn luyện viên chuyên nghiệp</p>
+                        </div>
+                    </div>
+                    
+            </div>
         </section>
+        
     </main>
+
+    
 
     <!-- Footer -->
     <footer class="footer">
@@ -62,10 +149,13 @@
                 </div>
                 <div class="inputAccount">
                     <label for="password" class="username">Nhập mật khẩu</label>
-                    <input type="text" name="password" id="password" placeholder="Mật khẩu">
+                    <input type="password" name="password" id="password" placeholder="Mật khẩu">
                 </div>
-                <div class="login-sai" style="color: red">
+                <div class="login-status-sai" style="color: red; display: none;">
                     Bạn đã nhập sai tên đăng nhập hoặc mật khẩu
+                </div>
+                <div class="login-status-dung" style="color: green; display: none;">
+                    Bạn đã nhập đúng tên đăng nhập và mật khẩu
                 </div>
                 <button class="login-btn">Đăng nhập</button>
                 
