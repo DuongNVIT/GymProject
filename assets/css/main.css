@@ -256,6 +256,7 @@ input[name="password"] {
     background-color: #2C0803;
     color: var(--white-color);
     text-align: center;
+    padding: 40px 0;
 }
 
 .offer-heading {

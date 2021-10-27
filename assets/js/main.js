@@ -4,14 +4,11 @@
 var navLogin = document.querySelector('.nav-login');
 var modal = document.querySelector('.modal');
 var modalContent = document.querySelector('.modal-content');
+var loginBtn = document.querySelector('.login-btn');
+var userAPI = "http://localhost:3000/users"
 
 var inputUsername = document.querySelector('input[id="username"]');
 var inputPassword =  document.querySelector('input[id="password"]');
-
-
-
-var loginBtn = document.querySelector('.login-btn');
-
 
 navLogin.addEventListener('click', login);
 function login() {
@@ -27,19 +24,6 @@ modalContent.addEventListener('click', function(e) {
     e.stopImmediatePropagation();
 })
 
-inputPassword.style.onkeydown = function(e) {
-    if(e.keyCode === 13) {
-        var formInput = {
-            username: inputUsername.value,
-            password: inputPassword.value
-        }
-        console.log(formInput);
-        getUsers(function(users) {
-            checkLogin(users, formInput);
-        });
-    }
-}
-
 loginBtn.addEventListener('click', function(e) {
     var formInput = {
         username: inputUsername.value,
@@ -52,9 +36,6 @@ loginBtn.addEventListener('click', function(e) {
     
 
 })
-
-
-var userAPI = "http://localhost:3000/users"
 
 function getUsers(callback) {
     fetch(userAPI)
